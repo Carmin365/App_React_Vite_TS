@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App em TS</title> 
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <style>
+      body {
+        background-color: lavenderblush;
+        padding: 50px;
+        text-align: center;
+      }
+
+      input {
+        border-radius: 6px;
+        border: black solid thin;
+        height: 26px;
+        padding: 10px;
+      }
+
+      #login-form, #app {
+        margin: 20px auto;
+        width: 300px;
+        padding: 20px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        border-radius: 5px;
+        background-color: #ccc;
+      }
+
+      .resposta {
+        color: red;
+      }
+
+      h1, h2, p {
+        color: black;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Aplicativo em Vite + React + TypeScript</h1>
+
+    <div id="login-form">
+      <h2>Login:</h2> 
+      <label><h3>* Digite o seu Nome:</h3></label>
+      <input type="text" id="username" placeholder="Usuário">
+
+      <label><h3>* Senha Cadastrada:</h3></label> 
+      <input type="password" id="password" placeholder="Senha">
+      
+      <button type="button">Ok</button>
+      
+      <h3><label id="resultado" class="resposta">- Seja Bem Vindo!</label></h3>
+    </div>  
+
+    <div id="root"></div>
+    
+    <script type="module" src="/src/main.tsx"></script>  
+  </body>
+</html>
